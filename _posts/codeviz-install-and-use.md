@@ -18,12 +18,14 @@ yum -y install perl graphviz
 
 ## 获取源码<a id="orgheadline2"></a>
 
--   codeviz最新版1.0.12
+- codeviz最新版1.0.12
+
     ```bash
     wget http://www.csn.ul.ie/~mel/projects/codeviz/codeviz-1.0.12.tar.gz
     ```
     
--   codeviz-1.0.12匹配的gcc是3.4.6和4.6.2，选择4.6.2
+- codeviz-1.0.12匹配的gcc是3.4.6和4.6.2，选择4.6.2
+
     ```bash
     # 使用中科大的GNU镜像服务器
     wget http://mirrors.ustc.edu.cn/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
@@ -32,6 +34,7 @@ yum -y install perl graphviz
 ## 编译安装<a id="orgheadline5"></a>
 
 解压codeviz: `tar xzvf codeviz-1.0.12.tar.gz`, codeviz官方主页的安装说明
+
 ```bash
 cd codeviz-1.0.12
 ./configure && make && make install
@@ -56,9 +59,9 @@ sudo make install
 
 install\_gcc-4.6.2.sh默认使能共享库 `--enable-shared` 并自举编译 `make bootstrap` 
 
--   共享库要指明编译参数 `-fPIC`
--   自举编译多半不能编译通过，所以要去使能自举编译 `--disable-bootstrap`
--   为了加快编译，可以指明用4个线程编译 `make -j 4`
+- 共享库要指明编译参数 `-fPIC`
+- 自举编译多半不能编译通过，所以要去使能自举编译 `--disable-bootstrap`
+- 为了加快编译，可以指明用4个线程编译 `make -j 4`
 
 根据这三点，给install\_gcc-4.6.2.sh打补丁，如下：
 
@@ -94,11 +97,14 @@ sudo make install-codeviz
 
 ## codeviz gcc-4.6.2编译nginx<a id="orgheadline7"></a>
 
--   安装依赖
+- 安装依赖
+
     ```bash
     yum -y install pcre openssl-devel
     ```
--   配置编译
+    
+- 配置编译
+
     ```bash
     CC=/usr/local/gcc-graph/bin/gcc auto/configure
     make
@@ -106,7 +112,8 @@ sudo make install-codeviz
 
 ## 生成调用图<a id="orgheadline8"></a>
 
--   查看参数说明
+- 查看参数说明
+
     ```bash
     # genfull参数说明
     genfull -h
@@ -114,7 +121,8 @@ sudo make install-codeviz
     gengraph -h
     ```
         
--   生成调用关系和被调关系
+- 生成调用关系和被调关系
+
     ```bash
     cd nginx
     # 生成总图dot文件，nginx目录下生成文件full.graph
