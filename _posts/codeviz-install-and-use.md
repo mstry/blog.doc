@@ -1,7 +1,10 @@
 ---
 title: CentOS7安装使用codeviz
 date: 2016-05-15 16:33:59
+categories: programming
 tags:
+    - c
+    - linux
 ---
 
 # 简介<a id="orgheadline1"></a>
