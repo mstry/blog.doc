@@ -73,8 +73,8 @@ systemctl enable lightdm
 ## 中文输入 ##
 
 ```bash
-# s1. 安装文泉驿微黑中文字体
-yum -y install wqy-microhei-fonts
+# s1. 安装文泉驿中文字体
+yum -y install wqy-microhei-fonts wqy-zenhei-fonts
 # s2. 安装ibus拼音输入法
 yum -y install ibus ibus-libpinyin
 ```
