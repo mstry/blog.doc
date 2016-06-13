@@ -7,7 +7,7 @@ tags:
     - linux
 ---
 
-# 简介<a id="orgheadline1"></a>
+# 1. 简介<a id="orgheadline1"></a>
 
 codeviz是一个分析c/c++项目函数调用关系的工具，基本思路是给gcc打上补丁，
 用这个打了补丁的gcc编译要分析的c/c++项目，编译过程中会把函数调用关系dump成文本文件(.cdepn)。
@@ -17,9 +17,9 @@ codeviz是一个分析c/c++项目函数调用关系的工具，基本思路是�
 yum -y install perl graphviz
 ```
 
-# 安装<a id="orgheadline6"></a>
+# 2. 安装<a id="orgheadline6"></a>
 
-## 获取源码<a id="orgheadline2"></a>
+## 2.1 获取源码<a id="orgheadline2"></a>
 
 - codeviz最新版1.0.12
 
@@ -34,7 +34,7 @@ yum -y install perl graphviz
     wget http://mirrors.ustc.edu.cn/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
     ```
 
-## 编译安装<a id="orgheadline5"></a>
+## 2.2 编译安装<a id="orgheadline5"></a>
 
 解压codeviz: `tar xzvf codeviz-1.0.12.tar.gz`, codeviz官方主页的安装说明
 
@@ -45,7 +45,7 @@ cd codeviz-1.0.12
     
 运气好的话，可以一次成功；不过凡人运气有限，尽量不用在小事上。下面说明如何一步一步安装。
 
-### 编译gcc-4.6.2<a id="orgheadline3"></a>
+### 2.2.1 编译gcc-4.6.2<a id="orgheadline3"></a>
 
 ```bash
 # 编译gcc的依赖
@@ -85,7 +85,7 @@ RETVAL=$?
 PLATFORM=i686-pc-linux-gnu
 ```
 
-### 安装codeviz-1.0.12<a id="orgheadline4"></a>
+### 2.2.2 安装codeviz-1.0.12<a id="orgheadline4"></a>
 
 codeviz绘制调用图用到两个perl脚本genfull和gengraph，其中，genfull依赖于perl-DB\_File
 
@@ -96,9 +96,9 @@ cd codeviz-1.0.12
 sudo make install-codeviz
 ```
 
-# 使用<a id="orgheadline9"></a>
+# 3. 使用<a id="orgheadline9"></a>
 
-## codeviz gcc-4.6.2编译nginx<a id="orgheadline7"></a>
+## 3.1 codeviz gcc-4.6.2编译nginx<a id="orgheadline7"></a>
 
 - 安装依赖
 
@@ -113,7 +113,7 @@ sudo make install-codeviz
     make
     ```
 
-## 生成调用图<a id="orgheadline8"></a>
+## 3.2 生成调用图<a id="orgheadline8"></a>
 
 - 查看参数说明
 

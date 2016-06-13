@@ -7,9 +7,9 @@ tags:
     - blog
 ---
 
-# 安装 #
+# 安装配置 #
 
-```shell
+```bash
 sudo yum -y install nodejs npm
 sudo npm install hexo-cli -g
 hexo init blog
@@ -17,7 +17,32 @@ cd blog
 npm install
 ```
 
-# 使用 #
+# 基本操作  #
+
+
+# NexT主题 #
+
+## 安装启用 ##
+
+## 调整代码字体 ##
+
+代码字体默认大小为13px，看起来略小，改为14px。
+当前使用的NexT版本号为5.0.1，代码字体定义在`source/css/_variables/base.styl`145行。
+
+```css
+// Code & Code Blocks
+// --------------------------------------------------
+$code-font-family               = $font-family-monospace
+$code-font-size                 = 14px
+$code-background                = $gainsboro
+$code-foreground                = $black-light
+$code-border-radius             = 4px
+```
+
+## 开启多说分享 ##
+
+
+## 开启百度统计和推广 ##
 
 
 # 参考资料 #

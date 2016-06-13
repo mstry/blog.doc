@@ -7,9 +7,9 @@ tags:
     - xfce4
 ---
 
-# 制作启动U盘 #
+# 1. 制作启动U盘 #
 
-## 下载系统镜像 ##
+## 1.1 下载系统镜像 ##
 
 从镜像网站下载CentOS7最小系统镜像，可以用网易或中科大网站，此处选中科大。
 
@@ -19,18 +19,18 @@ wget http://mirrors.ustc.edu.cn/centos/7.2.1511/isos/x86_64/CentOS-7-x86_64-Mini
 wget https://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/centos?codeblock=3 -O CentOS-Base.repo
 ```
 
-## 制作启动U盘 ##
+## 1.2 制作启动U盘 ##
 
 ```bash
 # 假设U盘的设备名称为/dev/sdb
 dd if=CentOS-7-x86_64-Minimal-1511.iso of=/dev/sdb bs=1M
 ```
 
-# 安装系统 #
+# 2. 安装系统 #
 
 设置BIOS从U盘启动，以及分区安装CentOS，设置网络和用户名等等，略去不表。
 
-# 安装xfce4 #
+# 3. 安装xfce4 #
 
 ```bash
 # s1. 更新repo，替换为国内的源
@@ -54,9 +54,9 @@ yum -y groupinstall Xfce
 systemctl set-default graphical.target
 ```
 
-# 其它 #
+# 4. 其它 #
 
-## 使用lightdm ##
+## 4.1 使用lightdm ##
 
 Xfce group默认使用gdm做为display manager，可以替换为轻量级的lightdm，
 同时安装相应的锁屏工具light-locker。
@@ -70,7 +70,7 @@ systemctl enable lightdm
 设置锁屏快捷键`Applications->Settings->Keyboard->Application Shortcuts->Add`，
 `light-locker-command -l`: `Ctrl+Alt+L`
 
-## 中文输入 ##
+## 4.2 中文输入 ##
 
 ```bash
 # s1. 安装文泉驿中文字体
