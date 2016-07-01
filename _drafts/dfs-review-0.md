@@ -21,3 +21,4 @@ client会把读取过的block到dataserver的映射关系缓存到本地，由�
 
 当下流行的分布式文件系统存储主要是基于查表(lustre、龙存、蓝鲸)和计算(ceph, GlusterFS)两大类文件系统做的。
 
+Linux4.6内核发布，引入OrangeFS
