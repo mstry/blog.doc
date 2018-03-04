@@ -1,5 +1,5 @@
 ---
-title: PRML笔记 - 1
+title: PRML - 高斯分布
 categories: 
 	- AI
 	- PRML
