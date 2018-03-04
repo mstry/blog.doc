@@ -1,10 +1,8 @@
 ---
 title: hexo安装使用
 date: 2016-06-04 14:32:07
-categories: writing
+categories:
 tags:
-    - hexo
-    - blog
 ---
 
 # 安装配置 #

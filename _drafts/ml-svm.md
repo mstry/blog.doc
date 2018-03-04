@@ -1,10 +1,8 @@
 ---
 title: 支持向量机
 date: 2017-04-18 21:14:52
-categories: machine learning
+categories:
 tags:
-	- statistic learning
-	- SVM
 ---
 
 $$

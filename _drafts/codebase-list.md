@@ -1,10 +1,8 @@
 ---
 title: 码库之链表
 date: 2016-06-12 22:37:28
-categories: Programming
+categories:
 tags:
-	- linux
-	- c
 ---
 
 # 介绍 #

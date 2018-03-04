@@ -1,10 +1,8 @@
 ---
 title: CentOS7最小系统安装xfce4
 date: 2016-06-07 20:53:21
-categories: linux
+categories:
 tags:
-    - centos7
-    - xfce4
 ---
 
 # 1. 制作启动U盘 #

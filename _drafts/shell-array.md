@@ -1,8 +1,8 @@
 ---
 title: Shell数组操作
 date: 2017-04-27 21:49:48
-categories: linux
-tags: shell
+categories: 
+tags: 
 ---
 
 ```bash

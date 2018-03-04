@@ -2,10 +2,7 @@
 title: CentOS7 Samba简单设置
 date: 2017-04-17 22:17:13
 categories:
-	- linux
 tags:
-	- centos7
-	- samba
 ---
 
 # 1. 安装配置 #

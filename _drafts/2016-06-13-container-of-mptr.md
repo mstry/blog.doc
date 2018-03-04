@@ -1,9 +1,7 @@
 ---
 title: container_of中__mptr的作用
-categories: programming
+categories:
 tags:
-  - linux
-  - c
 date: 2016-06-13 14:07:06
 ---
 

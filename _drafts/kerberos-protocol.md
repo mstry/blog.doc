@@ -3,8 +3,6 @@ title: Kerberos认证协议
 date: 2017-05-07 11:54:49
 categories:
 tags:
-  - security authentication
-  - kerberos protocol
 ---
 
 人为事物的产生通常都是有原因的，Kerberos协议自然不例外。用来验证身份的信息必须要加密传输，不管是可逆加密还是不可逆加密，

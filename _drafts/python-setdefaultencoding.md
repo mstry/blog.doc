@@ -1,7 +1,7 @@
 ---
 title: python默认编码设置
-categories: programming
-tags: python
+categories: 
+tags: 
 date: 2016-05-18 22:16:54
 ---
 
