@@ -1,11 +1,11 @@
 ---
-title: PRML - 高斯分布
+title: 高斯分布
+date: 2018-01-04 22:17:39
 categories: AI
 tags:
 	- PRML
 	- probability
 	- Gaussion-Distribution
-date: 2018-01-04 22:17:39
 ---
 
 
